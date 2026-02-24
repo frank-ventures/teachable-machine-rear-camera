@@ -18,7 +18,6 @@ let model, webcam, labelContainer, maxPredictions;
 
 // Load the image model and setup the webcam
 async function init() {
-  console.log("running :", running);
   if (!running) {
     running = true;
     startButton.innerText = "Stop Camera";
@@ -59,12 +58,10 @@ async function init() {
 async function pause() {
   if (!paused) {
     paused = true;
-    console.log("clicked");
     await webcam.pause();
     pauseButton.innerText = "Play Camera";
   } else {
     paused = false;
-    console.log("clicked again");
     await webcam.play();
   }
 }
