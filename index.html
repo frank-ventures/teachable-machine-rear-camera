@@ -1,15 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Frankies Taughtable Machine</h1>
     <div>Teachable Machine Image Model</div>
-    <button type="button" onclick="init()">Start</button>
+    <button id="startButton" type="button">Start Camera</button>
+    <button id="pauseButton" type="button">Pause Camera</button>
     <div id="webcam-container"></div>
     <div id="label-container"></div>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>

@@ -1,0 +1,12 @@
+:root {
+  --primary-colour: white;
+  --secondary-colour: black;
+}
+
+body {
+  background-color: var(--primary-colour);
+}
+
+#webcam-container {
+  border: 2px solid;
+}
